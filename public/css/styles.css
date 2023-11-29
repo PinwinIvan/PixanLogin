@@ -10,7 +10,7 @@ body{
     overflow-x: hidden;
 }
 
-/*Header style*/
+/*Header style---------------------------------------------*/
 header{
     margin-bottom: 10%;
 }
@@ -130,9 +130,9 @@ nav li:hover a {
     margin-right: 10px;
 }
 
-/*Header ends*/
+/*Header ends---------------------------------------------*/
 
-/*Home page style*/
+/*Home page style---------------------------------------------*/
 
 section {
     background-color: #FFCD9F;
@@ -158,10 +158,10 @@ img {
     margin-top: 20px;
 }
 
-/*Home page ends*/
+/*Home page ends---------------------------------------------*/
 
 
-/*History page style*/
+/*History page style---------------------------------------------*/
 
 .popol-vuhImage{
     width: 35%;
@@ -173,9 +173,62 @@ img {
     font-size: 1.2rem;
 }
 
-/*History page style ends*/
+/*---History page style ends----------------------------------*/
 
-/*Gallery page styles*/
+
+/*About us page style---------------------------------------------*/
+
+.about-us-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-person {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-person:hover {
+    transform: scale(1.05);
+}
+
+.about-person img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.about-person h2 {
+    font-size: 1.5rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-bottom: 5px;
+}
+
+.about-person p {
+    font-size: 1rem;
+    color: #000000;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.about-person img {
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/*About us page style ends---------------------------------------------*/
+
+
+
+/*Gallery page styles------------------------------------------------*/
 
 .gameScreenshots{
     border-radius: 1rem;
@@ -183,10 +236,10 @@ img {
 
 }
 
-/*Gallery page styles ends*/
+/*Gallery page styles ends---------------------------------------------*/
 
 
-/*Contact page style*/
+/*Contact page style---------------------------------------------*/
 
 .toptext h1{
     font-size: 42px;
@@ -196,7 +249,7 @@ img {
 }
 
 .opinionsForm{
-    background-color: #F3AA1B;
+    background-color: #FFCD9F;
     color: black;
     align-items: center;
     margin: 0 auto;
@@ -207,7 +260,7 @@ img {
 
 .opinionsForm input{
     border-style: hidden hidden solid hidden ;
-    background-color: #F3AA1B;
+    background-color: #FFCD9F;
     border-bottom-color: black;
     width: 100%;
 
@@ -263,15 +316,12 @@ textarea{
 padding-right: .3rem;
 }
 
-
-
-
-/*_______________________________________________________________________________________*/
+/*Contact page style__________________________________________________________*/
 
 
 
 
-/*Footer Style*/
+/*Footer Style---------------------------------------------*/
 
 footer {
     background-color: #8A1D1D;
@@ -313,6 +363,8 @@ footer {
     font-size: 16px;
 }
 
+/*Footer ends--------------------------------------------------------------------------------*/
+
 
 
 /*-----------Login page styles--------------*/
@@ -337,7 +389,11 @@ footer {
     box-sizing: border-box;
 }
 
-/*login btn style*/
+/*-----------Login page styles--------------*/
+
+
+
+/*login btn style------------------------------------------------------------*/
 .btn-login{
     width: 100%;
     padding: 15px;
@@ -360,7 +416,8 @@ footer {
     box-shadow: 0 0 0 3px rgba(40, 40, 137, 0.167);
 }
 
-/*register btn style*/
+
+/*register btn style----------------------------------------------------------*/
 .btn-register{
     width: 100%;
     padding: 15px;
@@ -390,7 +447,8 @@ footer {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.391)
 }
 
-/* Login button Style*/
+
+/* Login button Style----------------------------------------------------------------*/
 .a-login:link, .a-login:visited {
     background-color: white;
     color: black;
@@ -406,7 +464,9 @@ footer {
     color: white;
 }
 
-/* Logout button Style*/
+
+/* Logout button Style---------------------------------------------------------*/
+
 .a-login:link, .a-login:visited {
     background-color: white;
     color: black;
@@ -422,7 +482,8 @@ footer {
     color: white;
 }
 
-/*register form*/
+
+/*register form-----------------------------------------------------------------*/
 
 
 .register-form{
@@ -482,7 +543,7 @@ footer {
     font-weight: normal;
 }
 
-/* Cancel button start */ 
+/* Cancel button start--------------------------------------------------------*/ 
 
 .btn-cancel{
     width: 49%;
@@ -514,7 +575,8 @@ footer {
     box-shadow: 0 0 0 3px rgb(68, 146, 219);
 }
 
-/*Save btn style*/
+
+/*Save btn style-------------------------------------------------------------------*/
 .btn-save{
     width: 49%;
     padding: 15px;

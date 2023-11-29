@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixan</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://kit.fontawesome.com/41bcea2ae3.js"></script>
+    <link rel="stylesheet" href="fone">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="HeaderContent">
+            <div class="logo-container">
+                <img src="/public/Images/Logo/logoN.png" alt="" class="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="history"><i class="fas fa-book"></i> History</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="auth-section">
+                <a href="login" class="auth-link">Log In</a>
+                <span class="auth-divider">|</span>
+                <a href="register" class="auth-link">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home-section">
+        <div class="about-us-grid">
+            <div class="about-person">
+                <img src="/public/Images/Fotos/Carlos.jpg" alt="Jose Carlos">
+                <h2>Jose Carlos</h2>
+                <p>Programmer and Level Design</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur reiciendis eveniet voluptas id minus ratione, asperiores adipisci eius mollitia possimus. Doloribus possimus id expedita similique delectus odit, fugit molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facere asperiores libero excepturi repudiandae eligendi nobis incidunt, aperiam dolore, doloremque quia ratione aspernatur cum optio repellat enim atque! Officiis, sapiente?</p>
+            </div>
+            <div class="about-person">
+                <img src="/public/Images/Fotos/Fernanda.jpg" alt="Maria Fernanda">
+                <h2>Maria Fernanda</h2>
+                <p>Story and Writing</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, exercitationem consequuntur? Explicabo, incidunt nisi deleniti ea eos pariatur accusantium voluptatem magnam deserunt sint totam aliquid aspernatur debitis quasi consequatur dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum quasi vero reiciendis, veniam ea quibusdam et facere nobis neque, magni dolore tempore? Eligendi rerum unde repellat tempore eius neque!  </p>
+            </div>
+            <div class="about-person">
+                <img src="/public/Images/Fotos/Ivan.jpg" alt="Ivan">
+                <h2>Ivan</h2>
+                <p>Level Design</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora, quia autem in error atque illo animi commodi reprehenderit? Nihil laudantium dicta consequatur asperiores corporis magni ipsa vel quos quia!</p>
+            </div>
+            <div class="about-person">
+                <img src="/public/Images/Fotos/Luis.jpg" alt="Jose Luis">
+                <h2>Jose Luis</h2>
+                <p>Character Animation</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, aliquid quaerat illo fugiat magni aperiam veniam vero! Asperiores, aliquam. Iste asperiores doloremque molestias similique quam animi corporis debitis autem vero.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/public/Images/Logo/logo pixan.png" alt="Footer Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
