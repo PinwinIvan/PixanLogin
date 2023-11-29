@@ -13,6 +13,7 @@ dotenv.config ({path:'./env/.env'});
 //public directory path
 app.use('/', express.static('public'));
 app.use('/', express.static(__dirname + '/public'));
+app.use('/public/images/', express.static('./public/images'));
 
 //establish ejs search motor
 app.set('view engine', 'ejs');
@@ -31,12 +32,33 @@ app.use(session({
 //invoke database connection module, after env and db config
 const connection = require('./database/db')
 const { name } = require('ejs');
+
 app.get('/login', (req,res) =>{
     res.render('login');    
 })
 
 app.get('/register', (req,res) =>{
     res.render('register');  
+})
+
+app.get('/home', (req,res) =>{
+    res.render('home');  
+})
+
+app.get('/contact', (req,res) =>{
+    res.render('contact');  
+})
+
+app.get('/history', (req,res) =>{
+    res.render('history');  
+})
+
+app.get('/gallery', (req,res) =>{
+    res.render('gallery');  
+})
+
+app.get('/aboutus', (req,res) =>{
+    res.render('aboutus');  
 })
 
 // register 
@@ -116,12 +138,12 @@ app.post('/auth', async (req, res) =>{
 //13 Auth Pages
 app.get('/', (req, res) =>{
     if(req.session.loggedin){
-        res.render('contact', {
+        res.render('home', {
             login: true,
             name: req.session.name
         });
     }else{
-        res.render('contact', {
+        res.render('home', {
             login: false,
             name: 'Debe iniciar sesión'
         })

@@ -10,7 +10,312 @@ body{
     overflow-x: hidden;
 }
 
-/*Login page styles*/
+/*Header style*/
+header{
+    margin-bottom: 10%;
+}
+
+.HeaderContent {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #8A1D1D;
+    border-bottom: 2px solid #555;
+    z-index: 20;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.logo {
+    width: auto;
+    height: 29px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.1rem;
+    margin-left: 15px;
+    
+    font-weight: 400;
+    line-height: normal;
+    transition: color 0.3s;
+}
+
+nav li:hover a {
+    color: #098cb4;
+}
+
+ nav li i {
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        margin-bottom: 25%;
+    }
+
+    .HeaderContent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+
+}
+
+.auth-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu-icon i {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.auth-link {
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.auth-link:hover {
+    color: #098cb4;
+}
+
+.auth-divider {
+    color: #FFF;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+/*Header ends*/
+
+/*Home page style*/
+
+section {
+    background-color: #FFCD9F;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; 
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.game-info {
+    margin-top: 20px;
+}
+
+/*Home page ends*/
+
+
+/*History page style*/
+
+.popol-vuhImage{
+    width: 35%;
+    height: 35%;
+    border-radius: 1rem;
+}
+
+.historyText{
+    font-size: 1.2rem;
+}
+
+/*History page style ends*/
+
+/*Gallery page styles*/
+
+.gameScreenshots{
+    border-radius: 1rem;
+    margin-bottom: 10px;
+
+}
+
+/*Gallery page styles ends*/
+
+
+/*Contact page style*/
+
+.toptext h1{
+    font-size: 42px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.opinionsForm{
+    background-color: #F3AA1B;
+    color: black;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: fit-content;
+    border-radius: 10px;
+}
+
+.opinionsForm input{
+    border-style: hidden hidden solid hidden ;
+    background-color: #F3AA1B;
+    border-bottom-color: black;
+    width: 100%;
+
+}
+
+.opinionsQ{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 2px;
+}
+
+.messageField{
+    grid-area: 3 / 1 / 4 / 3; }
+
+textarea{
+    max-width: 100%;
+}
+
+.sendMessageBtn{
+    margin-top: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: #F4692D;
+}
+
+.contactHeader h2{
+    font-size: 38px;
+    font-weight: 100;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contactInfo{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.contactInfo p{
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.contactInfo p a{
+    text-decoration: none;
+    color: black;
+}
+.contactInfo p a i{
+padding-right: .3rem;
+}
+
+
+
+
+/*_______________________________________________________________________________________*/
+
+
+
+
+/*Footer Style*/
+
+footer {
+    background-color: #8A1D1D;
+    color: #FFF;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    position: static;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+}
+
+
+
+/*-----------Login page styles--------------*/
 .login-form, .container{
     width: 300px;
     margin: 0 auto;
@@ -236,257 +541,4 @@ body{
 
 .btn-save:focus{
     box-shadow: 0 0 0 3px rgb(207, 5, 5);
-}
-
-/**/
-
-
-
-/*Contact page style*/
-
-header{
-    margin-bottom: 10%;
-}
-
-.HeaderContent {
-    top: 0;
-    left: 0;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    background-color: #8A1D1D;
-    border-bottom: 2px solid #555;
-    z-index: 20;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-}
-
-.logo {
-    width: auto;
-    height: 29px;
-}
-
-.headerLinks nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.headerLinks nav li {
-    margin-right: 20px;
-}
-
-.headerLinks nav a {
-    text-decoration: none;
-    color: #FFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 1.1rem;
-    margin-left: 15px;
-    
-    font-weight: 400;
-    line-height: normal;
-    transition: color 0.3s;
-}
-
-.headerLinks nav li:hover a {
-    color: #098cb4;
-}
-
-.headerLinks nav li i {
-    margin-right: 8px;
-}
-
-@media only screen and (max-width: 768px) {
-    header{
-        margin-bottom: 25%;
-    }
-
-    .HeaderContent {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-
-}
-
-.auth-section {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.menu-icon i {
-    color: #FFF;
-    font-size: 20px;
-}
-
-.auth-links {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-
-.auth-link {
-    text-decoration: none;
-    color: #FFF;
-    margin-right: 30px;
-    margin-left: 30px;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-}
-
-.auth-link:hover {
-    color: #098cb4;
-}
-
-.auth-divider {
-    color: #FFF;
-    font-size: 32px;
-    margin-right: 10px;
-}
-
-.toptext h1{
-    font-size: 42px;
-    font-weight: 200;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.opinionsForm{
-    background-color: #F3AA1B;
-    color: black;
-    align-items: center;
-    margin: 0 auto;
-    padding: 15px;
-    max-width: fit-content;
-    border-radius: 10px;
-}
-
-.opinionsForm input{
-    border-style: hidden hidden solid hidden ;
-    background-color: #F3AA1B;
-    border-bottom-color: black;
-    width: 100%;
-
-}
-
-.opinionsQ{
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 2px;
-}
-
-.messageField{
-    grid-area: 3 / 1 / 4 / 3; }
-
-textarea{
-    max-width: 100%;
-}
-
-.sendMessageBtn{
-    margin-top: 10px;
-    border-style: solid;
-    border-color: black;
-    background-color: #F4692D;
-}
-
-.contactHeader h2{
-    font-size: 38px;
-    font-weight: 100;
-    position: relative;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.contactInfo{
-    text-align: center;
-    padding-bottom: 3rem;
-}
-
-.contactInfo p{
-    padding: 5px;
-    font-size: 2rem;
-}
-
-.contactInfo p a{
-    text-decoration: none;
-    color: black;
-}
-.contactInfo p a i{
-padding-right: .3rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*Padding Style*/
-
-footer {
-    background-color: #8A1D1D;
-    color: #FFF;
-    padding: 20px 0;
-    width: 100%;
-    text-align: center;
-    position: static;
-    bottom: 0;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-logo img {
-    width: 150px;
-    margin-bottom: 10px;
-}
-
-.footer-links ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-right: 20px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: #FFF;
-    font-size: 16px;
 }

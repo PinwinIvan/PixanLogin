@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixan</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <script src="http://kit.fontawesome.com/41bcea2ae3.js"></script>
+    <link rel="stylesheet" href="fone">
+</head>
+<body>
+    <header>
+        <div class="HeaderContent">
+            <div class="logo-container">
+                <img src="/public/Images/Logo/logoN.png" alt="" class="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="history"><i class="fas fa-book"></i> History</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="auth-section">
+                <a href="#" class="auth-link">Log In</a>
+                <span class="auth-divider">|</span>
+                <a href="#" class="auth-link">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="history-section">
+        <div>
+            <img class="popol-vuhImage" src="/public/Images/Capturas/popol vuh.jpg" alt="popol-vuh">
+        </div>
+        <div class="history-text">
+            <h1>Pixan</h1>
+            <p>The lords of Xibalbá, Hun-Camé and Vucub-Camé, have begun to expand the underworld onto the surface, transforming animals into spirits by stripping away their physical bodies. While playing the ball game, the twins Hunahpú and Ixbalanqué noticed that Ixbalanqué was losing his physical form. They realized it was the work of the lords of the underworld,prompting them to embark on a journey to Xibalbá to restore balance to the world.</p>
+            <a href="#about" class="cta-button">Más sobre el juego</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/public/Images/Logo/logo pixan.png" alt="Footer Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
