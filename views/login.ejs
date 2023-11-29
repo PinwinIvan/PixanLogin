@@ -9,6 +9,34 @@
     <title>Login</title>
 </head>
 <body>
+
+    <header>
+        <div class="HeaderContent">
+            <div class="logo-container">
+                <img src="/public/Images/Logo/logoN.png" alt="" class="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="headerLinks">
+                <nav>
+                    <ul>
+                        <li><a href="home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="history"><i class="fas fa-book"></i> History</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="auth-section">
+                <a href="login" class="auth-link">Log In</a>
+                <span class="auth-divider">|</span>
+                <a href="register" class="auth-link">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
     <!--<h2>Login</h2>-->
     <div class="login-form">    
         <h2>Login</h2>
@@ -20,6 +48,21 @@
         <a href="register" class="btn-register">Register</a>
     </div>
     
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/public/Images/Logo/logo pixan.png" alt="Footer Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <% if(typeof alert != "undefined") { %>
