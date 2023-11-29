@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <script src="http://kit.fontawesome.com/41bcea2ae3.js"></script>
+
+    <title>Contact</title>
+</head>
+<body>
+    
+    <header>
+        <div class="HeaderContent">
+            <div class="logo-container">
+                <img src="../public/Images/Logo/logoN.png" alt="" class="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="headerLinks">
+                <nav>
+                    <ul>
+                        <li><a href="home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="aboutus"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="history"><i class="fas fa-book"></i> History</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="auth-section">
+                <a href="login" class="auth-link">Log In</a>
+                <span class="auth-divider">|</span>
+                <a href="register" class="auth-link">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+        <div class="toptext">
+           <h1>Comments, questions?<br>
+            Send them our way.</h1>
+        </div>
+
+            <div class="opinionsForm">
+                
+                    <form action="#" method ="POST" class="opinionsQ">
+
+                        <div>
+
+                            <label for="firstName">First Name</label><br>
+                            <input id="firstName" placeholder="(Optional)">
+                        </div>
+
+                        <div>
+                            <label for="lastName">Last Name</label><br>
+                            <input id="lastName" placeholder="(Optional)">
+                        </div>
+
+                        <div>
+                            <label for="userEmail">Email</label><br>
+                            <input id="userEmail">                        
+                        </div>
+
+                        <div>    
+                            <label for="userAlias">Alias</label><br>
+                            <input id="userAlias" placeholder="(Optional)">
+                        </div>
+
+                        <div class="messageField">
+                            <label for="userMessage">Message</label><br>
+                            <textarea name="" id="userMessage" cols="53" rows="3" placeholder="Your message..."></textarea>
+                        </div>
+
+                        <div>
+                            <input class="sendMessageBtn" type="submit" value="Send Message">
+                        </div>
+                    </form>
+
+            </div>
+            <div class="contactHeader">
+                <h2>Contact Information</h2>
+             </div>
+
+             <div class="contactInfo" id="contactInfo">
+                <p><a href="#"><i class="fas fa-envelope"></i>pixangame@gmail.com</a></p>
+                <p><a href="#"><i class="fas fa-headset"></i>In your walls</a></p>
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="IMG/Logo/logo pixan.png" alt="Footer Logo">
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            
+            <script>
+                function toggleMenu() {
+                    var nav = document.querySelector('nav ul');
+                    nav.classList.toggle('show');
+                }
+            </script>
+</body>
+</html>

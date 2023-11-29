@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Register</title>
+</head>
+<body>
+
+    <header>
+        <div class="HeaderContent">
+            <div class="logo-container">
+                <img src="IMG/Logo/logoN.png" alt="" class="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="headerLinks">
+                <nav>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="#"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> History</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="auth-section">
+                <a href="#" class="auth-link">Log In</a>
+                <span class="auth-divider">|</span>
+                <a href="#" class="auth-link">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="register-form">
+
+        <h1>Register</h1>
+        <div class="gridRegister">
+            <form action="/register" method="POST">
+                
+                <div>
+                <label for="user">User</label>
+                <input type="text" name="user" required>
+                </div>
+
+                <div>
+                <label for="name">Full name</label>
+                <input type="text" name="name" required>
+                </div>
+
+                <div>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" required>
+                </div>
+   
+                    <div class="gridCancelBtn">
+                    <a href="/" class="btn-cancel">Cancel</a>
+                    </div>
+                    
+                    <div class="gridSaveBtn">
+                    <input type="submit" value="Save" class="btn-save">
+                    </div>
+
+                
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="IMG/Logo/logo pixan.png" alt="Footer Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon: '<%= alertIcon %>',
+                showConfirmButton: <%= showConfirmButton %>,
+                timer: <%= timer %>
+            }).then(() => {
+                window.location = '/<%= ruta %>'
+            })
+        </script>
+    <% } %>
+</body>
+</html>

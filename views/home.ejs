@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixan</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="http://kit.fontawesome.com/41bcea2ae3.js"></script>
+    <link rel="stylesheet" href="fone">
+</head>
+<body>
+    <header>
+        <div class="HeaderContent">
+            <div class="logo-container">
+                <img src="IMG/Logo/logoN.png" alt="" class="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="Home.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="History.html"><i class="fas fa-book"></i> History</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="auth-section">
+                <a href="#" class="auth-link">Log In</a>
+                <span class="auth-divider">|</span>
+                <a href="#" class="auth-link">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="home-section">
+        <div class="hero">
+            <img src="IMG/Capturas/placeholder.avif" alt="Game Screenshot">
+        </div>
+        <div class="game-info">
+            <h1>Nombre del Videojuego</h1>
+            <p>Una breve descripción del juego y su premisa.</p>
+            <a href="#about" class="cta-button">Más sobre el juego</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>Acerca del Juego</h2>
+            <p>Información detallada sobre la historia, los personajes y las características únicas del juego.</p>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="feature">
+            <img src="IMG/Capturas/placeholder.avif" alt="Feature Image 1">
+            <h3>Característica 1</h3>
+            <p>Descripción de la primera característica destacada del juego.</p>
+        </div>
+        <div class="feature">
+            <img src="IMG/Capturas/placeholder.avif" alt="Feature Image 2">
+            <h3>Característica 2</h3>
+            <p>Descripción de la segunda característica destacada del juego.</p>
+        </div>
+        <!-- Agrega más características según sea necesario -->
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="IMG/Logo/logo pixan.png" alt="Footer Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
